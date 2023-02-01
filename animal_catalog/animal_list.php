@@ -1,8 +1,8 @@
-<?php include 'view/header.php'; ?>
+<?php include '../view/header.php'; ?>
 <main>
     <aside>
         <h1>Animal Types</h1>
-        <?php include 'view/animalTypes_nav.php'; ?>
+        <?php include '../view/animalTypes_nav.php'; ?>
     </aside>
     <section>
         <h1><?php echo $animalType_name; ?></h1>
@@ -19,4 +19,4 @@
         </ul>
     </section>
 </main>
-<?php include 'view/footer.php'; ?>
+<?php include '../view/footer.php'; ?>

@@ -3,10 +3,10 @@
     <h1>Menu</h1>
     <ul>
         <li>
-            <a href="zoo_manager/index.php">Zoo Manager</a>
+            <a href="zoo_manager">Zoo Manager</a>
         </li>
         <li>
-            <a href="animal_catalog/index.php">Animal Catalog</a>
+            <a href="animal_catalog">Animal Catalog</a>
         </li>
     </ul>
 </main>

@@ -1,7 +1,7 @@
 <?php
-require('model/database.php');
-require('model/animal_db.php');
-require('model/animalType_db.php');
+require('../model/database.php');
+require('../model/animal_db.php');
+require('../model/animalType_db.php');
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -26,7 +26,7 @@ if ($action == 'list_animals') {
             FILTER_VALIDATE_INT);   
     if ($animal_id == NULL || $animal_id == FALSE) {
         $error = 'Missing or incorrect animal id.';
-        include('errors/error.php');
+        include('../errors/error.php');
     } else {
         $animalTypes = get_animalTypes();
         $animal = get_animal($animal_id);

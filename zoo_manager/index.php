@@ -1,7 +1,7 @@
 <?php
-require('model/database.php');
-require('model/animal_db.php');
-require('model/animalType_db.php');
+require('../model/database.php');
+require('../model/animal_db.php');
+require('../model/animalType_db.php');
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -30,7 +30,7 @@ if ($action == 'list_animals') {
     if ($animalType_id == NULL || $animalType_id == FALSE ||
             $animal_id == NULL || $animal_id == FALSE) {
         $error = "Missing or incorrect animal id or animalType id.";
-        include('errors/error.php');
+        include('../errors/error.php');
     } else { 
         delete_animal($animal_id);
         header("Location: .?animalType_id=$animalType_id");
@@ -51,7 +51,7 @@ if ($action == 'list_animals') {
             $name == NULL || $age == NULL || $gender == NULL ||
             $weight == NULL || $IsPregnant == NULL) {
         $error = "Invalid animal data. Check all fields and try again.";
-        include('errors/error.php');
+        include('../errors/error.php');
     } else { 
         add_animal($animalType_id, $animal_id, $name, $age, $gender, $weight, $IsPregnant);
         header("Location: .?animalType_id=$animalType_id");
