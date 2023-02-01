@@ -1,4 +1,4 @@
-<?php include '../view/header.php'; ?>
+<?php include 'view/header.php'; ?>
 <main>
 
     <h1>Animal Type List</h1>
@@ -37,4 +37,4 @@
     <p><a href="index.php?action=list_animals">List Animals</a></p>
 
 </main>
-<?php include '../view/footer.php'; ?>
+<?php include 'view/footer.php'; ?>

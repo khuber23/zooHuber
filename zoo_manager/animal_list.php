@@ -1,11 +1,11 @@
-<?php include '../view/header.php'; ?>
+<?php include 'view/header.php'; ?>
 <main>
     <h1>Animal List</h1>
 
     <aside>
         <!-- display a list of animalTypes -->
         <h2>Animal Types</h2>
-        <?php include '../view/animalTypes_nav.php'; ?>
+        <?php include 'view/animalTypes_nav.php'; ?>
     </aside>
 
     <section>
@@ -43,4 +43,4 @@
         <p class="last_paragraph"><a href="?action=list_animalTypes">List animalTypes</a></p>        
     </section>
 </main>
-<?php include '../view/footer.php'; ?>
+<?php include 'view/footer.php'; ?>
